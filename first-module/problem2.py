@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 def decimal_exponent(exponent, number=1.0):
     number = number * 10 ** exponent
     return number

@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 def divide_by_zero(numerator, quotient):
     try:
         return numerator / quotient

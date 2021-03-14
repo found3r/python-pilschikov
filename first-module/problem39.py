@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 print('Type a 3-digit number: ')
 x = int(input())
 check_if_correct_number = 0
