@@ -3,6 +3,8 @@
 
 import math
 
+# Derivative of 'x ^ x = a'
+
 x = 1
 power = -1
 a = int(input('Input "a" (a > 0) variable: '))
@@ -16,8 +18,12 @@ while x != math.pow(a, 1 / x):
 print('')
 print(f'Derivative of function = {x}*{x}^{x - 1}')
 
+# Root of 'ln(ctg[x] - 1) = a'
+
 print('')
 print(f'Function root = {math.pow(math.atan(math.exp(a) + 1), -1)}')
+
+# Average geometric of three numbers
 
 number1 = int(input('Input first number: '))
 number2 = int(input('Input second number: '))
@@ -25,6 +31,8 @@ number3 = int(input('Input third number: '))
 
 print('')
 print(f'Average geometric = {pow(number1 * number2 * number3, 1 / 3) % 1}')
+
+# Circle and sphere length, square and volume
 
 radius = int(input('Input radius (mm): '))
 print('')
