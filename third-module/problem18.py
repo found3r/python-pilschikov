@@ -76,6 +76,41 @@ def coord_triangle():  # Triangle perimeter and square based on three input coor
     print(f'Triangle square = {math.sqrt(hp * (hp - d1) * (hp - d2)) * (hp - d3)}')
 
 
+def side_degrees():  # Third side and square based on two sides and corner degree between them
+    side1 = int(input('Input first side: '))
+    side2 = int(input('Input second side: '))
+    degree = int(input('Input degrees: '))
+
+    side3 = math.sqrt(side1 ^ 2 + side2 ^ 2 - 2 * side1 * side2 * int(math.cos(degree)))
+    hp = side1 + side2 + side3
+
+    print(f'Third side = {round(side3, 4)}')
+    print(f'Triangle square = {round(math.sqrt(hp * (hp - side1) * (hp - side2) * (hp - side3)), 4)}')
+
+
+def multiple():  # 4-digit number digits multiplication
+    while True:
+        number = int(input('Input a 4-digit number: '))
+        if (number > 9999) and (number < 1000):
+            print('Wrong input, try again: ')
+        else:
+            multiplication = (number // 1000) * (number // 100 % 10) * (number % 100 // 10) * (number % 10)
+            print(f'Multiplication = {multiplication}')
+            break
+
+
+def reverse():
+    while True:
+        number = int(input('Input a 3-digit numb    er: '))
+        if (number > 999) and (number < 100):
+            print('Wrong input, try again: ')
+        else:
+            digits = list(str(number))
+            reversednumber = digits[2] + digits[1] + digits[0]
+            print(f'Reversed number = {reversednumber}')
+            break
+
+
 def runner():
     print('Type for available functions: ')
     print('1 for Functions')
@@ -83,7 +118,11 @@ def runner():
     print('3 for Length, square and volume based on input radius')
     print('4 for Rectangle triangle square and perimeter')
     print('5 for Triangle square and perimeter based on coordinates')
+    print('6 for Side and square based on two sides and corner degree between them')
+    print('7 for 4-digit number digits multiplication')
+    print('8 for 3-digit number reverse')
     run = input('...or "exit" to leave the program: ')
+    print('')
 
     if run == '1':
         return functions()
@@ -95,7 +134,13 @@ def runner():
         return rectangle()
     elif run == '5':
         return coord_triangle()
-    elif run == 'exit' or 'Exit':
+    elif run == '6':
+        return side_degrees()
+    elif run == '7':
+        return multiple()
+    elif run == '8':
+        return reverse()
+    elif run == 'exit' or run == 'Exit':
         sys.exit()
     else:
         print('Wrong input, try again')
