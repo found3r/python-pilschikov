@@ -3,10 +3,9 @@
 
 
 number = int(input('Input a positive number: '))
-if number <= 0:
-    while number <= 0:
-        print('Wrong input')
-        number = int(input('Input a positive number: '))
+while number <= 0:
+    print('Wrong input')
+    number = int(input('Input a positive number: '))
 
 summary = 1
 term_divisor = 2

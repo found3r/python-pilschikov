@@ -9,15 +9,13 @@ import math
 def divisor():  # Greatest divisor of two numbers
     greatest_divisor = 1
     first_number = int(input('Input the first positive number: '))
-    if first_number <= 0:
-        while first_number <= 0:
-            print('Wrong input')
-            first_number = int(input('Input the first positive number: '))
+    while first_number <= 0:
+        print('Wrong input')
+        first_number = int(input('Input the first positive number: '))
     second_number = int(input('Input the second positive number: '))
-    if second_number <= 0:
-        while second_number <= 0:
-            print('Wrong input')
-            second_number = int(input('Input the second positive number: '))
+    while second_number <= 0:
+        print('Wrong input')
+        second_number = int(input('Input the second positive number: '))
         print(' ')
 
     if first_number % second_number == 0:

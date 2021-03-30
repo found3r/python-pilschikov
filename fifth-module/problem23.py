@@ -5,10 +5,10 @@
 import math
 
 number = int(input('Input a number > 1: '))
-if number <= 1:
-    while number <= 1:
-        print('Wrong input')
-        number = int(input('Input a positive number: '))
+
+while number <= 1:
+    print('Wrong input')
+    number = int(input('Input a positive number: '))
 
 log = int(math.log(number))
 exp = int(math.exp(number))

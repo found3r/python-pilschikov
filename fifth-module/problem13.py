@@ -8,30 +8,28 @@ import sys
 
 def n_function():  # Factorial of (2*n - 1) function
     number = int(input('Input a positive number: '))
-    if number <= 0:
-        while number <= 0:
-            print('Wrong input')
-            number = int(input('Input a positive number: '))
+
+    while number <= 0:
+        print('Wrong input')
+        number = int(input('Input a positive number: '))
     result = math.factorial(2 * number - 1)
     print(f'Function result is {result}')
 
 
 def double_double_factorial():  # Double factorial of 2n function
     number = int(input('Input a positive number: '))
-    if number <= 0:
-        while number <= 0:
-            print('Wrong input')
-            number = int(input('Input a positive number: '))
+    while number <= 0:
+        print('Wrong input')
+        number = int(input('Input a positive number: '))
     result = math.factorial(math.factorial(2 * number))
     print(f'Function result is {result}')
 
 
 def double_factorial():  # Double factorial
     number = int(input('Input a positive number: '))
-    if number <= 0:
-        while number <= 0:
-            print('Wrong input')
-            number = int(input('Input a positive number: '))
+    while number <= 0:
+        print('Wrong input')
+        number = int(input('Input a positive number: '))
     result = math.factorial(math.factorial(number))
     print(f'Function result is {result}')
 
