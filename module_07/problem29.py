@@ -10,7 +10,7 @@ animals = ['rat', 'cow', 'tiger', 'hare', 'dragon', 'snake',
 def japanese_calendar(year):
     year = year - 4
     cycle_year = year % 60  # Finds the exact year inside a cycle
-    sub_cycle = cycle_year // 12   # Finds the cycle's number
+    sub_cycle = cycle_year // 12  # Finds the cycle's number
     sub_cycle_year = cycle_year % 12  # Finds the exact year of a cycle
     year_colour = colours[sub_cycle]
     year_animal = animals[sub_cycle_year]
