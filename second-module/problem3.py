@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 n = 0
 t = True
 p = 101010
