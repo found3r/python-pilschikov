@@ -2,6 +2,3 @@
 .idea
 .venv
 venv/
-
-# System files
-*.swp
