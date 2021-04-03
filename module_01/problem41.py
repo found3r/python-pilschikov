@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 print('Full circle is 360 degrees')
 print('That makes a single hour equal ', 360, ' degrees')
 print('And as there are 60 minutes in each hour each minute is ', 360 // 60, ' degree')

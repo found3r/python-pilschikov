@@ -1,3 +1,7 @@
+#  Copyright (c) 2021.
+#  Leonid Zhavoronkov (halfleonlife@gmail.com)
+
+
 SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 print('а) a + b * x +c * y * z')
 print('б) [(a * x - b) * x + c] * x - d')
